@@ -1,12 +1,15 @@
 export function renderNavigation(element: HTMLElement) {
   element.innerHTML = `
     <nav class="main-nav">
-      <ul class="nav-list">
-        <li><a href="#/" class="nav-link" data-path="/">Home</a></li>
-        <li><a href="#/projects" class="nav-link" data-path="/projects">Projects</a></li>
-        <li><a href="#/about" class="nav-link" data-path="/about">About</a></li>
-        <li><a href="#/contact" class="nav-link" data-path="/contact">Contact</a></li>
-      </ul>
+      <div class="nav-content">
+        <a href="#/" class="nav-logo">ABDESSAMAD <span class="logo-accent">&lt;/&gt;</span></a>
+        <ul class="nav-list">
+          <li><a href="#/" class="nav-link" data-path="/">Home</a></li>
+          <li><a href="#/projects" class="nav-link" data-path="/projects">Projects</a></li>
+          <li><a href="#/about" class="nav-link" data-path="/about">About</a></li>
+          <li><a href="#/contact" class="nav-link" data-path="/contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   `;
 
