@@ -25,37 +25,109 @@ export function renderDigitalIdentity(element: HTMLElement) {
       </div>
       
       <div class="tech-stack-section">
-        <h3 class="section-subtitle">التقنيات التي أستخدمها</h3>
+        <h3 class="section-subtitle">Technologies I Use</h3>
         <div class="tech-grid">
-          <div class="tech-category">
-            <span class="category-name">Frontend Technologies</span>
-            <div class="tech-tags">
-              <span class="tech-pill">HTML5</span>
-              <span class="tech-pill">CSS3</span>
-              <span class="tech-pill">JavaScript (ES6+)</span>
-              <span class="tech-pill">TypeScript</span>
-              <span class="tech-pill">React</span>
-              <span class="tech-pill">TailwindCSS</span>
+          <div class="tech-card">
+            <div class="tech-card-header">
+              <span class="tech-icon">⚡</span>
+              <span class="category-name">Frontend</span>
+            </div>
+            <div class="tech-list">
+              <div class="tech-item">
+                <div class="tech-info">
+                  <span class="tech-name">HTML5</span>
+                  <span class="tech-percent">95%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-info">
+                  <span class="tech-name">CSS3</span>
+                  <span class="tech-percent">90%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-info">
+                  <span class="tech-name">JavaScript</span>
+                  <span class="tech-percent">85%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-info">
+                  <span class="tech-name">React</span>
+                  <span class="tech-percent">80%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-info">
+                  <span class="tech-name">TailwindCSS</span>
+                  <span class="tech-percent">90%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+              </div>
             </div>
           </div>
-          <div class="tech-category">
-            <span class="category-name">Backend & Database</span>
-            <div class="tech-tags">
-              <span class="tech-pill">Node.js</span>
-              <span class="tech-pill">Python</span>
-              <span class="tech-pill">SQL</span>
-              <span class="tech-pill">MongoDB</span>
-              <span class="tech-pill">Firebase</span>
+          
+          <div class="tech-card">
+            <div class="tech-card-header">
+              <span class="tech-icon">🛠️</span>
+              <span class="category-name">Backend</span>
+            </div>
+            <div class="tech-list">
+              <div class="tech-item">
+                <div class="tech-info">
+                  <span class="tech-name">Node.js</span>
+                  <span class="tech-percent">45%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 45%"></div></div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-info">
+                  <span class="tech-name">Firebase</span>
+                  <span class="tech-percent">48%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 48%"></div></div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-info">
+                  <span class="tech-name">MongoDB</span>
+                  <span class="tech-percent">40%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 40%"></div></div>
+              </div>
             </div>
           </div>
-          <div class="tech-category">
-            <span class="category-name">أدوات التطوير</span>
-            <div class="tech-tags">
-              <span class="tech-pill">Git</span>
-              <span class="tech-pill">VS Code</span>
-              <span class="tech-pill">Vite</span>
-              <span class="tech-pill">Figma</span>
-              <span class="tech-pill">Postman</span>
+          
+          <div class="tech-card">
+            <div class="tech-card-header">
+              <span class="tech-icon">⚙️</span>
+              <span class="category-name">Tools</span>
+            </div>
+            <div class="tech-list">
+              <div class="tech-item">
+                <div class="tech-info">
+                  <span class="tech-name">Git & GitHub</span>
+                  <span class="tech-percent">85%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-info">
+                  <span class="tech-name">VS Code</span>
+                  <span class="tech-percent">95%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+              </div>
+              <div class="tech-item">
+                <div class="tech-info">
+                  <span class="tech-name">Figma</span>
+                  <span class="tech-percent">80%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+              </div>
             </div>
           </div>
         </div>
