@@ -25,7 +25,7 @@ export function renderIdentityCore(element: HTMLElement) {
           <div class="profile-meta">
             <span class="meta-item">abdessamadguia11@gmail.com</span>
             <span class="meta-separator">/</span>
-            <span class="meta-item">+212 778-9463</span>
+            <span class="meta-item">+212 778-449363</span>
           </div>
         </div>
       </div>
