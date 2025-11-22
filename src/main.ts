@@ -5,6 +5,7 @@ import { renderDigitalIdentity } from './components/DigitalIdentity'
 import { renderMicroConsole } from './components/MicroConsole'
 import { renderContact } from './components/Contact'
 import { renderNavigation } from './components/Navigation'
+import { renderPreloader } from './components/Preloader'
 import { Router } from './router'
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
@@ -80,4 +81,7 @@ document.addEventListener('route-changed', () => {
 });
 
 // Initial call
-addHoverEffect();
+// Initial call
+renderPreloader(() => {
+  addHoverEffect();
+});
