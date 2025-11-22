@@ -7,8 +7,8 @@ export function renderContact(element: HTMLElement) {
           <div class="contact-item">
             <span class="contact-label">Email</span>
             <div class="contact-value-group">
-              <a href="mailto:abdessamadguiadiri@gmail.com" class="contact-value">abdessamadguiadiri@gmail.com</a>
-              <button class="copy-btn" data-value="abdessamadguiadiri@gmail.com" aria-label="Copy Email">
+              <a href="mailto:abdessamadguia11@gmail.com" class="contact-value">abdessamadguia11@gmail.com</a>
+              <button class="copy-btn" data-value="abdessamadguia11@gmail.com" aria-label="Copy Email">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
               </button>
             </div>
@@ -17,8 +17,8 @@ export function renderContact(element: HTMLElement) {
           <div class="contact-item">
             <span class="contact-label">Phone</span>
             <div class="contact-value-group">
-              <a href="tel:+212625436362" class="contact-value">+212 625-436362</a>
-              <button class="copy-btn" data-value="+212625436362" aria-label="Copy Phone">
+              <a href="tel:+212778-449363" class="contact-value">+212 778-449363</a>
+              <button class="copy-btn" data-value="+212778-449363" aria-label="Copy Phone">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
               </button>
             </div>
