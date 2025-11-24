@@ -71,6 +71,12 @@ ul {
   gap: 2rem;
 }
 
+@media (max-width: 480px) {
+  #app {
+    padding: 1rem;
+  }
+}
+
 /* Navigation */
 .main-nav {
   position: sticky;
@@ -137,6 +143,49 @@ ul {
   height: 4px;
   background: var(--text-primary);
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    min-width: unset;
+    width: 100%; /* Use full available width */
+    padding: 0.5rem 1.5rem;
+    top: 1rem;
+  }
+
+  .nav-content {
+    gap: 1rem;
+  }
+
+  .nav-list {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-nav {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+  }
+
+  .nav-content {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .nav-list {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: center; /* Center items if they wrap */
+    gap: 1rem; /* Add gap back for wrapped items */
+  }
+  
+  .nav-link {
+    font-size: 0.85rem;
+  }
 }
 
 /* Page Transitions */
@@ -291,23 +340,61 @@ ul {
   to { opacity: 1; transform: translateY(0); }
 }
 
-@media (max-width: 600px) {
-  .social-matrix {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
-  .profile-name {
-    font-size: 2.5rem;
-  }
-
+@media (max-width: 768px) {
   .profile-header {
     flex-direction: column;
     text-align: center;
-    gap: 1.5rem;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+
+  .profile-avatar {
+    width: 200px;
+    height: 200px;
   }
 
   .profile-info {
     align-items: center;
+    gap: 1rem;
+  }
+
+  .profile-name {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .profile-bio {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .social-matrix {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-matrix {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+  }
+  
+  .profile-name {
+    font-size: 2.2rem;
+  }
+
+  .profile-avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+  .profile-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .meta-separator {
+    display: none;
   }
 
   .contact-grid {
@@ -467,6 +554,43 @@ ul {
 
 .retry-btn:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 1.2rem;
+  }
+
+  .project-header {
+    margin-bottom: 0.5rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+  
+  .project-tech {
+    gap: 0.5rem;
+  }
 }
 
 /* Digital Identity Map */
@@ -716,7 +840,15 @@ ul {
   50% { opacity: 0; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .digital-identity-container {
+    gap: 2rem;
+  }
+
+  .identity-map {
+    padding: 1.5rem;
+  }
+
   .identity-node {
     flex-direction: column;
     gap: 0.5rem;
@@ -736,6 +868,36 @@ ul {
   
   .connector-line {
     display: none;
+  }
+
+  .connector-label {
+    padding: 0.2rem 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .console-container {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-card {
+    padding: 1rem;
+  }
+  
+  .tech-card-header {
+    margin-bottom: 1rem;
+  }
+  
+  .tech-info {
+    font-size: 0.8rem;
   }
 }
 
@@ -987,15 +1149,45 @@ ul {
   margin-top: 2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+
+  .contact-content {
+    margin-top: 1rem;
+    gap: 2rem;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
   
-  .tech-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .contact-item {
+    padding: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.7rem;
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+  
+  .submit-btn {
+    width: 100%;
   }
 }
 
