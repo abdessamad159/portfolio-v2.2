@@ -6,6 +6,7 @@ import { renderMicroConsole } from './components/MicroConsole'
 import { renderContact } from './components/Contact'
 import { renderNavigation } from './components/Navigation'
 import { renderPreloader } from './components/Preloader'
+import { renderParticleBackground } from './components/ParticleBackground'
 import { Router } from './router'
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
@@ -83,5 +84,6 @@ document.addEventListener('route-changed', () => {
 // Initial call
 // Initial call
 renderPreloader(() => {
+  renderParticleBackground(document.body);
   addHoverEffect();
 });
